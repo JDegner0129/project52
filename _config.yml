@@ -4,4 +4,3 @@ pygments: true
 baseurl: /project52
 safe: true
 lsi: false
-source: project52
