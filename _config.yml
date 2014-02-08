@@ -1,6 +1,6 @@
 name: Project 52
 markdown: redcarpet
 pygments: true
-baseurl: /project52
+baseurl: /
 safe: true
 lsi: false
