@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Project 52 - Home
+jspath: index
 ---
 
 {% for post in site.posts %}
@@ -9,7 +10,7 @@ title: Project 52 - Home
 		<small>{{ post.date | date_to_long_string }}</small>
 		</h1>
 	</div>
-	<div class="post-preview" id="{{ post.id }}">
+	<div class="post-preview" id="{{ post.navid }}">
 		{{ post.excerpt }}
 	</div>
 {% endfor %}

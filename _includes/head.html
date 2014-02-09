@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="/css/main.css">
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     </head>
-    <body>
+    <body data-spy="scroll" target=".sidebar">
     	<div class="container-fluid">
 	    	<div class="navbar navbar-default" role="navigation">
 	    		<div class="container-fluid">
@@ -22,17 +22,19 @@
 	    			</div>
 	    			<div class="navbar-collapse collapse" id="navbar-content">
 						<ul class="nav navbar-nav">
-							<li><a href="/index.html">Home</a></li>
-							<li class="dropdown">
+							<li id="about-nav"><a href="#">About</a></li>
+							<li id="posts-nav" class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Posts <b class="caret"></b></a>
 								<ul class="dropdown-menu">
 									{% for post in site.posts %}
 										<li>
-											<a href="{{ post.url }}">{{ post.title }}</a>
+											<a href="/index.html#{{ post.navid }}">{{ post.title }}</a>
 										</li>
 									{% endfor %}
 								</ul>
 							</li>
+							<li id="calendar-nav"><a href="#">Calendar</a></li>
+							<li id="github-nav"><a href="https://github.com/jdegner0129">Github</a></li>
 						</ul>
 	    			</div>
 	    		</div>

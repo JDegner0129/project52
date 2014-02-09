@@ -1,7 +1,6 @@
 ---
-layout: post
 title: My First Post
-id: my-first-post
+navid: my-first-post
 ---
 
 <p>

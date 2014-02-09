@@ -1,5 +1,5 @@
-<ul class="nav nav-pills nav-stacked blog-nav">
+<ul class="nav nav-pills nav-stacked sidebar">
 	{% for post in site.posts %}
-		<li><a href="/index.html#{{ post.id }}">{{ post.title }}</a></li>
+		<li><a href="#{{ post.navid }}">{{ post.title }}</a></li>
 	{% endfor %}
 </ul>
