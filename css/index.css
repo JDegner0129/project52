@@ -1,6 +1,10 @@
-@media(min-width:768px) {
+.sidebar {
+	overflow-y: hidden;
+	position: fixed;
+}
+
+@media(max-width:768px) {
 	.sidebar {
-		overflow-y: hidden;
-		position: fixed;
+		display: none;
 	}
 }
