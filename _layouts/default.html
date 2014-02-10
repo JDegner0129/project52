@@ -1,10 +1,15 @@
 {% include head.html %}
-<div class="row">
+<div class="row post-wrapper">
 	<div class="col-xs-12 col-sm-3 col-md-3">
 		{% include sidebar.html %}
 	</div>
 	<div class="col-xs-12 col-sm-9 col-md-9">
 		{{ content }}
 	</div>
+</div>
+<div class="sticky-footer">
+	<div id="disqus_thread"></div>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
 {% include foot.html %}

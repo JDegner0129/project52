@@ -12,3 +12,13 @@
 .continue-reading: {
 	margin-top: 50px;
 }
+
+.sticky-footer {
+	height: 200px;
+	margin-top: 50px;
+}
+
+.post-wrapper {
+	min-height: 100%;
+	margin-bottom: -250px;
+}
