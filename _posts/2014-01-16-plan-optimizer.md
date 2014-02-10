@@ -1,4 +1,6 @@
 ---
+layout: post
+assetpath: post
 title: Plan Optimizer
 navid: plan-optimizer
 ---

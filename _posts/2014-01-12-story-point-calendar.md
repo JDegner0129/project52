@@ -1,4 +1,6 @@
 ---
+layout: post
+assetpath: post
 title: JIRA4lyfe
 navid: lifejira
 ---
