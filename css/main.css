@@ -6,10 +6,10 @@
 
 .bombastic {
 	z-index: 2;
-	background: linear-gradient(rgb(100, 169, 229), rgb(66, 139, 202));
-	background: -moz-linear-gradient(rgb(100, 169, 229), rgb(66, 139, 202));
-	background: -webkit-linear-gradient(rgb(100, 169, 229). rgb(66, 139, 202));
-	background: -o-linear-gradient(rgb(100, 169, 229), rgb(66, 139, 202));
+	background: linear-gradient(#754090, #662089);
+	background: -moz-linear-gradient(#754090, #662089);
+	background: -webkit-linear-gradient(#754090. #662089);
+	background: -o-linear-gradient(#754090, #662089);
 	margin-top: 50px;
 	position: fixed;
 	width: 100%;
