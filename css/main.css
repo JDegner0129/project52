@@ -1,5 +1,11 @@
 /***** Shared Styles *****/
 
-.sidebar {
-	margin-top: 40px;
+.content-wrapper {
+	margin-top: 60px;
+}
+
+footer {
+	margin: 40px 0;
+	width: 100%;
+	text-align: center;
 }

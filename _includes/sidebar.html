@@ -1,5 +1,13 @@
-<ul class="nav nav-pills nav-stacked sidebar">
-	{% for post in site.posts %}
-		<li><a href="#{{ post.navid }}">{{ post.title }}</a></li>
-	{% endfor %}
-</ul>
+
+<div class="sidebar">
+	<div class="page-header">
+		<h1>
+			<small>Posts</small>
+		</h1>
+	</div>
+	<ul class="nav nav-pills nav-stacked">
+		{% for post in site.posts %}
+			<li><a href="#{{ post.navid }}">{{ post.title }}</a></li>
+		{% endfor %}
+	</ul>
+</div>

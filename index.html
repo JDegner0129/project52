@@ -1,16 +1,20 @@
 ---
 layout: default
 title: Project 52 - Home
-jspath: index
+assetpath: index
 ---
 
-{% for post in site.posts %}
-	<div class="page-header">
-		<h1>{{ post.title }}
-		<small>{{ post.date | date_to_long_string }}</small>
-		</h1>
-	</div>
-	<div class="post-preview" id="{{ post.navid }}">
-		{{ post.excerpt }}
-	</div>
-{% endfor %}
+<div class="post-content">
+	{% for post in site.posts %}
+		<div id="{{ post.navid }}">
+			<div class="page-header">
+				<h1>{{ post.title }}
+				<small>{{ post.date | date_to_long_string }}</small>
+				</h1>
+			</div>
+			<div>
+				{{ post.content }}
+			</div>
+		</div>
+	{% endfor %}
+</div>
