@@ -2,6 +2,7 @@
 layout: post
 assetpath: post
 title: JIRA4lyfe
+tagline: For that inner scrum master in you.
 navid: lifejira
 ---
 

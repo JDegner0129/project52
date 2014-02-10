@@ -1,5 +1,4 @@
 .sidebar {
-	overflow-y: hidden;
 	position: fixed;
 }
 
@@ -14,11 +13,9 @@
 }
 
 .sticky-footer {
-	height: 200px;
-	margin-top: 50px;
+	margin-top: 75px;
 }
 
 .post-wrapper {
 	min-height: 100%;
-	margin-bottom: -250px;
 }

@@ -1,7 +1,8 @@
 ---
 layout: post
 assetpath: post
-title: Voice Recognition Calculator
+title: Voice Calculator
+tagline: It's like Siri, but for math.
 navid: voice-calc
 ---
 

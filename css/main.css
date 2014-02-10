@@ -1,7 +1,35 @@
 /***** Shared Styles *****/
 
 .content-wrapper {
-	margin-top: 60px;
+	margin-top: 200px;
+}
+
+.bombastic {
+	z-index: 2;
+	background: linear-gradient(rgb(100, 169, 229), rgb(66, 139, 202));
+	background: -moz-linear-gradient(rgb(100, 169, 229), rgb(66, 139, 202));
+	background: -webkit-linear-gradient(rgb(100, 169, 229). rgb(66, 139, 202));
+	background: -o-linear-gradient(rgb(100, 169, 229), rgb(66, 139, 202));
+	margin-top: 50px;
+	position: fixed;
+	width: 100%;
+}
+
+.bombastic-content {
+	margin: 20px;
+	text-align: center;
+	color: white;
+}
+
+.bombastic-content > h1 {
+	font-size: 500%;
+	font-weight: 200;
+	margin: 0;
+	padding: 0;
+}
+
+.bombastic-content > p {
+	font-size: 150%;
 }
 
 footer {

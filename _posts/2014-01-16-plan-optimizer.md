@@ -2,6 +2,7 @@
 layout: post
 assetpath: post
 title: Plan Optimizer
+tagline: Because there's nothing more satisfying than finally figuring out where to eat.
 navid: plan-optimizer
 ---
 
