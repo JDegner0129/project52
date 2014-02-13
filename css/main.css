@@ -8,7 +8,7 @@
 	z-index: 2;
 	background: linear-gradient(#754090, #662089);
 	background: -moz-linear-gradient(#754090, #662089);
-	background: -webkit-linear-gradient(#754090. #662089);
+	background: -webkit-linear-gradient(#754090, #662089);
 	background: -o-linear-gradient(#754090, #662089);
 	margin-top: 50px;
 	position: fixed;
