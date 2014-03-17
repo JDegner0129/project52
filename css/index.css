@@ -1,6 +1,6 @@
-.sidebar {
-	position: fixed;
-}
+/*.sidebar {
+	position: relative;
+}*/
 
 @media(max-width:768px) {
 	.sidebar {
