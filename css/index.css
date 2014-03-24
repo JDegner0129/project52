@@ -1,7 +1,3 @@
-/*.sidebar {
-	position: relative;
-}*/
-
 @media(max-width:768px) {
 	.sidebar {
 		display: none;
@@ -14,4 +10,12 @@
 
 .post-wrapper {
 	min-height: 100%;
+}
+
+.social-media a:hover {
+	text-decoration: none;
+}
+
+.feedback a:hover {
+	text-decoration: none;
 }

@@ -1,6 +1,24 @@
-.post {
-	margin-top: 250px;
+@media(min-width: 768px) {
+	.post {
+		margin-top: 50px;
+	}
+
+	.go-back {
+		margin-top: 50px;
+	}
 }
+
+
+@media(max-width: 768px) {
+	.post {
+		margin-top: 250px;
+	}
+
+	.go-back {
+		display: none;
+	}
+}
+
 
 .sticky-footer {
 	margin-top: 75px;

@@ -1,24 +1,50 @@
 /***** Shared Styles *****/
 
-.content-wrapper {
-	margin-top: 200px;
+@media(min-width: 768px) {
+	.navbar {
+		display: none;
+	}
+
+	/*.content-wrapper {
+		margin-top: 50px;
+	}*/
+
+	.bombastic {
+		background: linear-gradient(#754090, #662089);
+		background: -moz-linear-gradient(#754090, #662089);
+		background: -webkit-linear-gradient(#754090, #662089);
+		background: -o-linear-gradient(#754090, #662089);
+		width: 100%;
+		padding: 40px;
+	}
+
+	.bombastic-content {
+		text-align: center;
+		color: white;
+	}
 }
 
-.bombastic {
-	z-index: 2;
-	background: linear-gradient(#754090, #662089);
-	background: -moz-linear-gradient(#754090, #662089);
-	background: -webkit-linear-gradient(#754090, #662089);
-	background: -o-linear-gradient(#754090, #662089);
-	top: 50px;
-	position: absolute;
-	width: 100%;
-}
+@media(max-width: 768px) {
+	.content-wrapper {
+		margin-top: 200px;
+	}
 
-.bombastic-content {
-	margin: 20px;
-	text-align: center;
-	color: white;
+	.bombastic {
+		z-index: 2;
+		background: linear-gradient(#754090, #662089);
+		background: -moz-linear-gradient(#754090, #662089);
+		background: -webkit-linear-gradient(#754090, #662089);
+		background: -o-linear-gradient(#754090, #662089);
+		top: 50px;
+		position: absolute;
+		width: 100%;
+	}
+
+	.bombastic-content {
+		margin: 20px;
+		text-align: center;
+		color: white;
+	}
 }
 
 .bombastic-content > h1 {
@@ -37,3 +63,4 @@ footer {
 	width: 100%;
 	text-align: center;
 }
+

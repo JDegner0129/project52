@@ -1,12 +1,102 @@
 <div class="sidebar">
-	<div class="page-header">
-		<h1>
-			<small>Recent Posts</small>
-		</h1>
+	<div class="sidebar-posts">
+		<div class="page-header">
+			<h1>
+				<small>Posts</small>
+			</h1>
+		</div>
+		<div class="panel-group" id="sidebar-accordion">
+			{% assign firstmonth = true %}
+			{% for post in site.posts %}
+				{% capture currentmonth %}{{post.date | date: '%B' }}{% endcapture %}
+				{% if currentmonth != newmonth %}
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="sidebar-accordion" href="#collapse-{{currentmonth}}">
+									{{ currentmonth }}
+								</a>
+							</h4>
+						</div>
+						{% if firstmonth %}
+						<div id="collapse-{{currentmonth}}" class="panel-collapse collapse in">
+						{% assign firstmonth = nil %}
+						{% else %}
+						<div id="collapse-{{currentmonth}}" class="panel-collapse collapse">
+						{% endif %}
+							<div class="panel-body">
+									{% for _post in site.posts %}
+										<div class="row">
+										{% capture postmonth %}{{_post.date | date: '%B'}}{% endcapture %}
+										{% if postmonth == currentmonth %}
+											<div class="col-xs-3">
+												{{ _post.date | date: '%m/%d' }}
+											</div>
+											<div class="col-xs-9">
+												<a href="{{ _post.url }}">{{ _post.title }}</a>
+											</div>
+										{% endif %}
+										</div>
+									{% endfor %}
+							</div>
+						</div>
+					</div>
+					{% capture newmonth %}{{ currentmonth }}{% endcapture %}
+				{% endif %}
+			{% endfor %}
+		</div>
 	</div>
-	<ul class="nav nav-pills nav-stacked">
-		{% for post in site.posts limit:5 %}
-			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-		{% endfor %}
-	</ul>
+	<div class="sidebar-share">
+		<div class="page-header">
+			<h1>
+				<small>Social</small>
+			</h1>
+		</div>
+		<div class="social-media">
+			<div class="facebook">
+				<h4>
+					<a href="https://www.facebook.com/jordan.degner" target="_blank">
+						<span class="fa fa-fw fa-facebook"></span> Facebook
+					</a>
+				</h4>
+			</div>
+			<div class="twitter">
+				<h4>
+					<a href="https://twitter.com/JordanDegner" target="_blank">
+						<span class="fa fa-fw fa-twitter"></span> Twitter
+					</a>
+				</h4>
+			</div>
+			<div class="twitter">
+				<h4>
+					<a href="https://github.com/JDegner0129/project52" target="_blank">
+						<span class="fa fa-fw fa-github"></span> Github
+					</a>
+				</h4>
+			</div>
+		</div>
+	</div>
+	<div class="sidebar-feedback">
+		<div class="page-header">
+			<h1>
+				<small>Feedback</small>
+			</h1>
+		</div>
+		<div class="feedback">
+			<div class="report-bug">
+				<h4>
+					<a href="https://github.com/JDegner0129/project52/issues/new" target="_blank">
+						<span class="fa fa-fw fa-comment"></span> Report a Bug
+					</a>
+				</h4>
+			</div>
+			<div class="send-email">
+				<h4>
+					<a href="mailto:jdegner0129@gmail.com" target="_blank">
+						<span class="fa fa-fw fa-envelope"></span> Send an Email
+					</a>
+				</h4>
+			</div>
+		</div>
+	</div>
 </div>
